@@ -23,6 +23,6 @@ TEST_CASE("We receive ", "[stringreverse]") {
 }
 
 TEST_CASE("we can move ", "[stringreverse]") {
-    
+
 
 }

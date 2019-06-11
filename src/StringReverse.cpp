@@ -1,19 +1,20 @@
 #include "StringReverse.h"
+#include <algorithm>
 
 using namespace CPPLondonUni;
 
-StringReverse::StringReverse(const std::string& str) {
-
-}
+StringReverse::StringReverse(const std::string& str)
+: revStr(str.rbegin(), str.rend())
+{ }
 
 bool StringReverse::empty() const noexcept {
-    return true;
+    return revStr.empty();
 }
 
 bool StringReverse::operator==(const std::string& other) const noexcept {
-    return true;
+    return revStr == other;
 }
 
 StringReverse::operator std::string() const {
-    return {};
+    return revStr;
 }
